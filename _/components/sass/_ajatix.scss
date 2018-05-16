@@ -1,0 +1,51 @@
+// Main Menu (larger than phone size) --------------------------------------------------
+.AJXCSSMenuUdPLMDD {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dbdada+0,aeaeae+100 */
+  @include background($grad-menu, $color-menu-stop1);
+  // background: rgb(219,218,218); /* Old browsers */
+  // background: -moz-linear-gradient(top,  rgba(219,218,218,1) 0%, rgba(174,174,174,1) 100%); /* FF3.6-15 */
+  // background: -webkit-linear-gradient(top,  rgba(219,218,218,1) 0%,rgba(174,174,174,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  // background: linear-gradient(to bottom,  rgba(219,218,218,1) 0%,rgba(174,174,174,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbdada', endColorstr='#aeaeae',GradientType=0 ); /* IE6-9 */
+
+  >ul>li:hover>a,
+  >ul>li.ajxover>a,
+  >ul>li:hover>a.ajxsub,
+  >ul>li.ajxover>a.ajxsub {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c6c1c1+0,7a7a7a+100 */
+  @include background($grad-menu-alt, darken($color-menu-stop1, 30%));
+  // background: rgb(198,193,193); /* Old browsers */
+  // background: -moz-linear-gradient(top,  rgba(198,193,193,1) 0%, rgba(122,122,122,1) 100%); /* FF3.6-15 */
+  // background: -webkit-linear-gradient(top,  rgba(198,193,193,1) 0%,rgba(122,122,122,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  // background: linear-gradient(to bottom,  rgba(198,193,193,1) 0%,rgba(122,122,122,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6c1c1', endColorstr='#7a7a7a',GradientType=0 ); /* IE6-9 */
+
+  } //:hover & ajxover
+
+  li,
+  >ul>li>a.ajxsub {
+
+    @include media(">=960px", "<desktop") {
+      width: 125px;
+    } //large size
+    @include media(">=650px", "<960px") {
+      width: 85px;
+    } //medium size
+
+  } //li, >ul>li>a.ajxsub
+
+  >ul>li>a {
+
+    @include media(">=650px", "<960px") {
+      font-size: 12px;
+    } //medium size
+
+  } //>ul>li>a
+
+} //main menu
+
+
+// Mobile View --------------------------------------------------
+.AJXCSSMenuUdPLMDD_n {
+  margin-top: 1em;
+} //mobile menu

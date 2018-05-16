@@ -1,0 +1,84 @@
+// Colors --------------------------------------------------
+$color-bg-abs               : #000000;
+$color-bg-abs-lighter       : lighten($color-bg-abs, 20%);
+$color-bg-main              : #333333;
+$color-bg-lighter           : lighten($color-bg-main, 30%);
+$color-bg-lightest          : lighten($color-bg-main, 60%);
+$color-text                 : #666666;
+$color-text-shadow1         : lighten($color-text, 10%);
+$color-text-shadow2         : darken($color-text, 60%);
+$color-text-alt             : lighten($color-text, 30%);
+$color-menu-text            : $color-bg-main;
+$color-menu-stop1           : #dbdada;
+$color-menu-stop2           : darken($color-menu-stop1, 20%);
+$color-link                 : #2c679b;
+$color-link-hover           : lighten($color-link, 20%);
+$color-link-active          : lighten($color-link, 40%);
+$color-linkalt              : #00ced1;
+$color-linkalt-hover        : lighten($color-linkalt, 10%);
+$color-linkalt-active       : lighten($color-linkalt, 20%);
+$color-accent               : #c61d23;
+
+$color-table-row-odd        : lighten($color-text, 50%);
+$color-table-row-even       : lighten($color-text, 70%);
+$color-table-text           : $color-bg-main;
+$color-table-header         : #f9f9f9;
+
+$color-napkin-stop1         : #f04d3f;
+$color-napkin-stop2         : darken($color-napkin-stop1, 10%);
+$color-coaster-stop1        : #f5821f;
+$color-coaster-stop2        : darken($color-coaster-stop1, 5%);
+$color-stirpik-stop1        : #ffd64f;
+$color-stirpik-stop2        : darken($color-stirpik-stop1, 5%);
+$color-plate-stop1          : #5ba5a6;
+$color-plate-stop2          : darken($color-plate-stop1, 5%);
+$color-cup-stop1            : #135d83;
+$color-cup-stop2            : darken($color-cup-stop1, 5%);
+$color-utensil-stop1        : #7f5785;
+$color-utensil-stop2        : darken($color-utensil-stop1, 5%);
+
+$color-method               : #999999;
+$color-digital              : #7e37d6;
+$color-tradition            : #fcaf17;
+$color-hispeed              : #74b44d;
+// Gradients --------------------------------------------------
+$grad-background1           : linear-gradient(to bottom, lighten($color-bg-abs, 20%), $color-bg-abs);
+$grad-menu                  : linear-gradient($color-menu-stop1, $color-menu-stop2);
+$grad-menu-alt              : linear-gradient(darken($color-menu-stop1, 30%), darken($color-menu-stop2, 30%));
+$grad-sidebar               : linear-gradient(to bottom, lighten($color-bg-abs, 30%), lighten($color-bg-abs, 10%));
+$grad-accent-selected       : linear-gradient(to bottom, darken($color-accent, 10%), darken($color-accent, 20%));
+$grad-accent                : linear-gradient(to bottom, darken($color-accent, 20%), darken($color-accent, 30%));
+$grad-accent-right          : linear-gradient(to right, darken($color-accent, 20%), darken($color-accent, 30%));
+$grad-swatch-bg             : linear-gradient(to bottom, lighten($color-bg-abs, 20%), lighten($color-bg-abs, 10%));
+
+$grad-napkin                : linear-gradient(to bottom, $color-napkin-stop1, $color-napkin-stop2);
+$grad-coaster               : linear-gradient($color-coaster-stop1, $color-coaster-stop2);
+$grad-stirpik               : linear-gradient($color-stirpik-stop1, $color-stirpik-stop2);
+$grad-plate                 : linear-gradient($color-plate-stop1, $color-plate-stop2);
+$grad-cup                   : linear-gradient($color-cup-stop1, $color-cup-stop2);
+$grad-utensil               : linear-gradient($color-utensil-stop1, $color-utensil-stop2);
+
+$grad-method                : linear-gradient(to bottom, darken($color-method, 30%), darken($color-method, 40%));
+$grad-method-selected       : linear-gradient(to bottom, darken($color-method, 10%), darken($color-method, 20%));
+$grad-digital               : linear-gradient(to bottom, darken($color-digital, 20%), darken($color-digital, 30%));
+$grad-tradition             : linear-gradient(to bottom, darken($color-tradition, 20%), darken($color-tradition, 30%));
+$grad-hispeed               : linear-gradient(to bottom, darken($color-hispeed, 20%), darken($color-hispeed, 30%));
+$grad-digital-selected      : linear-gradient(to bottom, darken($color-digital, 10%), darken($color-digital, 20%));
+$grad-tradition-selected    : linear-gradient(to bottom, darken($color-tradition, 10%), darken($color-tradition, 20%));
+$grad-hispeed-selected      : linear-gradient(to bottom, darken($color-hispeed, 10%), darken($color-hispeed, 20%));
+
+// Fonts --------------------------------------------------
+$font-paragraph             : "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-headings              : "proxima-nova-extra-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-script                : "spumante", script;
+$font-mono                  : "fira-mono", Monaco, monospace;
+
+// Spacing --------------------------------------------------
+$spacing                    : 2em;
+
+// Sizing --------------------------------------------------
+
+// Images --------------------------------------------------
+$bg-main                    : image-url("background-planes-2800x1600.jpg");
+$bg-hero                    : image-url("hero-01.jpg");
+$logo-main                  : image-url("logo/acs-logo-2017-01.svg");

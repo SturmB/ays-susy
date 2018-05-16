@@ -1,0 +1,129 @@
+#prices-content {
+
+  .item-info {
+    @include span(12);
+    @include clearfix;
+
+    @include media(">=card-layout-phone") {
+      @include span(12);
+      margin-bottom: gutter(12);
+
+      &.singleton {
+        @include span(12);
+
+        img {
+          // max-height: 200px;
+        } //img
+
+      } //singleton
+
+      &.tripleton {
+        @include span(12);
+
+        img {
+          // max-height: 200px;
+        } //img
+
+      } //tripleton
+
+      img {
+        // max-height: 140px;
+      } //img
+
+    } //>phone
+
+    @include media(">=card-layout-tablet") {
+      @include gallery(5 of 10);
+      margin-bottom: gutter(10);
+
+      &.singleton {
+        @include span(isolate 8 of 12 at 3);
+      } //singleton
+
+      &.tripleton {
+        @include span(12);
+
+        img {
+          // max-height: 200px;
+        } //img
+
+      } //tripleton
+
+      img {
+        // max-height: 140px;
+      } //img
+
+    } //>=tablet
+
+    @include media(">=desktop") {
+      @include gallery(6 of 12);
+      margin-bottom: gutter(12);
+
+      &.singleton {
+        @include span(isolate 8 of 12 at 3);
+      } //singleton
+
+      &.tripleton {
+        @include gallery(4 of 12);
+
+        .item-thumb {
+          width: 140px;
+          height: 140px;
+        }
+
+        img {
+          // max-height: 140px;
+          width: 140px;
+          height: 140px;
+        } //img
+
+      } //tripleton
+
+      img {
+        // max-height: 140px;
+      } //img
+
+    } //>=desktop
+
+
+    .itd {
+      @include span(12);
+      border-bottom: 2px groove darken($color-accent, 20%);
+      padding-right: 0;
+      margin-bottom: 1.5em;
+
+      @include media(">=card-layout-phone") {
+        @include span(5);
+        border-bottom: 0;
+        border-right: 2px groove darken($color-accent, 20%);
+        padding-right: 0.5em;
+        margin-bottom: 0;
+        margin-right: 0;
+      } //>phone
+
+    } //itd
+
+    .item-description {
+      margin-bottom: 0;
+      border-bottom: 0;
+    } //item-description
+
+    .item-pricing {
+      @include span(12);
+
+      @include media(">=card-layout-phone") {
+        @include span(last 7);
+      } // >=card-layout-phone
+
+      td {
+        padding-right: 4px;
+        padding-left: 4px;
+        font-family: $font-mono;
+      } // td
+
+    } // .item-pricing
+
+  } // .item-info
+
+
+} // #prices-content

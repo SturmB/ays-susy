@@ -1,0 +1,42 @@
+@charset "utf-8";
+/*
+ Ajatix Advanced CSS Drop Down Menu
+ Copyright (C) 2009-2016 Ajatix. All rights reserved.
+ http://www.ajatix.com
+*/
+.AJXCSSMenuUdPLMDD,.AJXCSSMenuUdPLMDD_n,.AJXCSSMenuUdPLMDD *,.AJXCSSMenuUdPLMDD_n * {box-sizing:border-box;}
+.AJXCSSMenuUdPLMDD {position:relative;z-index:100;width:100%;line-height:0;border-radius:6px 6px 6px 6px;background:#dbdada;text-align:center;}
+.AJXCSSMenuUdPLMDD ul {position:relative;display:inline-block;margin:0;padding:0px 0px 0px 0px;list-style-type:none;}
+*+html .AJXCSSMenuUdPLMDD ul {display:inline;}
+.AJXCSSMenuUdPLMDD li {float:left;width:150px;margin:0;}
+.AJXCSSMenuUdPLMDD li:hover,.AJXCSSMenuUdPLMDD li.ajxover {position:relative;}
+.AJXCSSMenuUdPLMDD a,.AJXCSSMenuUdPLMDD_n a {display:block;overflow:hidden;}
+.AJXCSSMenuUdPLMDD>ul>li>a {height:59px;white-space:nowrap;padding:0 11px 0 11px;font:bold 20px "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;line-height:59px;text-decoration:none;text-transform:none;text-align:center;border:0;color:#666666;background:none;}
+.AJXCSSMenuUdPLMDD>ul>li:hover>a,.AJXCSSMenuUdPLMDD>ul>li.ajxover>a {color:#ffffff;background:#999999;}
+.AJXCSSMenuUdPLMDD>ul>li>a.ajxsub {width:150px;padding:0 11px 0 11px;background:none;}
+.AJXCSSMenuUdPLMDD>ul>li:hover>a.ajxsub,.AJXCSSMenuUdPLMDD>ul>li.ajxover>a.ajxsub {position: static;background:#999999;}
+.AJXCSSMenuUdPLMDD li ul {position:absolute;left:-9999px;top:-9999px;width:156px;height:auto;display:inline-block;vertical-align:top;font-size:0;float:none;padding:1px 1px 1px 1px;border:none;background:#cccccc url(ajxmenu_files/sub-bg.gif) repeat-y left center;box-shadow:3px 3px 10px rgba(0,0,0,.5);}
+.AJXCSSMenuUdPLMDD li:hover > ul,.AJXCSSMenuUdPLMDD li.ajxover > ul {left:0px;top:59px;}
+.AJXCSSMenuUdPLMDD li li {width:154px;margin:0;margin-top:1px;}
+.AJXCSSMenuUdPLMDD li li:first-child {margin-top:0;}
+.AJXCSSMenuUdPLMDD li li a {height:auto;white-space:normal;padding:11px 8px 11px 11px;font:bold 14px "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;line-height:14px;text-decoration:none;text-transform:none;text-align:left;border:0;color:#777777;background:#eeeeee url(ajxmenu_files/sub.gif) no-repeat top left;}
+.AJXCSSMenuUdPLMDD li li:hover>a,.AJXCSSMenuUdPLMDD li li.ajxover>a {color:#ffffff;background:#aaaaaa url(ajxmenu_files/sub.gif) no-repeat bottom left;}
+.AJXCSSMenuUdPLMDD li li a.ajxsub {width:154px;padding:11px 8px 11px 11px;background:#eeeeee url(ajxmenu_files/sub.gif) no-repeat top left;}
+.AJXCSSMenuUdPLMDD li li:hover>a.ajxsub,.AJXCSSMenuUdPLMDD li li.ajxover>a.ajxsub {position: static;background:#aaaaaa url(ajxmenu_files/sub-bg.gif) no-repeat bottom left;}
+.AJXCSSMenuUdPLMDD li li:hover > ul,.AJXCSSMenuUdPLMDD li li.ajxover > ul {left:155px;top:-1px;}
+@media screen and (max-width:649px) {
+.AJXCSSMenuUdPLMDD:after,.AJXCSSMenuUdPLMDD_n:after {content:'narrow';display:none;}
+.AJXCSSMenuUdPLMDD_n {position:relative;width:100%;z-index:100;padding-top:59px;background:#dbdada;border-radius:6px;cursor:pointer;}
+.AJXCSSMenuUdPLMDD_n:before {position:absolute;top:0;right:10px;content:"\2261";font:bold 59px Arial,Helvetica,sans-serif;line-height:59px;color:#666666;z-index:1;}
+.AJXCSSMenuUdPLMDD_n>ul:before {position:absolute;top:0;left:10px;content:"ACS";font:bold 29px Arial,Helvetica,sans-serif;line-height:59px;color:#666666;z-index:1;cursor:pointer;}
+.AJXCSSMenuUdPLMDD_n ul {margin:0;list-style-type:none;background:#cccccc url(ajxmenu_files/sub-bg.gif) repeat-y left center;}
+.AJXCSSMenuUdPLMDD_n>ul {height:0;overflow:hidden;}
+.AJXCSSMenuUdPLMDD_n>ul.ajxover,.AJXCSSMenuUdPLMDD_n li ul{height:auto;padding:10px 10px 10px 10px;cursor:default;}
+.AJXCSSMenuUdPLMDD_n li {float:none;margin:1px 0 0 0;display:none;}
+.AJXCSSMenuUdPLMDD_n li:first-child {margin-top:0px;}
+.AJXCSSMenuUdPLMDD_n .ajxover li {display:block;}
+.AJXCSSMenuUdPLMDD_n li a {height:auto;white-space:normal;padding:12px 8px 12px 11px;font:bold 18px "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;line-height:18px;text-decoration:none;text-transform:none;text-align:left;border:0;color:#777777;background:#eeeeee url(ajxmenu_files/sub.gif) no-repeat top left;}
+.AJXCSSMenuUdPLMDD_n li:hover>a,.AJXCSSMenuUdPLMDD_n li.ajxover>a {color:#ffffff;background:#aaaaaa url(ajxmenu_files/sub.gif) no-repeat bottom left;}
+.AJXCSSMenuUdPLMDD_n li a.ajxsub {padding:12px 8px 12px 11px;background:#eeeeee url(ajxmenu_files/sub.gif) no-repeat top left;}
+.AJXCSSMenuUdPLMDD_n li:hover>a.ajxsub,.AJXCSSMenuUdPLMDD_n li.ajxover>a.ajxsub {position: static;background:#aaaaaa url(ajxmenu_files/sub-bg.gif) no-repeat bottom left;}
+}

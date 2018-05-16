@@ -1,0 +1,138 @@
+// Establish a vertical rhythm
+@include establish-baseline;
+
+// Overall --------------------------------------------------
+body {
+  font-family: $font-paragraph;
+  color: $color-text;
+  @include background($bg-main,
+                      $color-bg-abs);
+  background-position: top center;
+  background-repeat: no-repeat;
+} //body
+
+// Anchors --------------------------------------------------
+a {
+  color: $color-link;
+  font-style: italic;
+  // text-decoration: underline;
+  &:hover, &:focus {
+      color: $color-link-hover;
+  } //:hover, :focus
+  &:focus {
+      outline: 0;
+  } //:focus
+  &:active {
+      color: $color-link-active;
+  } //:active
+} //a
+
+// FontAwesome --------------------------------------------------
+span:after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+} // span:after
+
+.svg-inline--fa,
+.fa-inline {
+  margin: 0 0.25em;
+} // .svg-inline--fa
+
+// Shadows --------------------------------------------------
+.shadow-soft {
+  @include box-shadow(rgba(0, 0, 0, 0.25) 0 5px 5px);
+} //shadow-soft
+
+// Text rendering --------------------------------------------------
+.small, .sub, .sup {
+  //font-size: 0.83em;
+  font-size: 0.50em;
+} // small, sub, sup
+.sub {
+  vertical-align: sub;
+} // .sub
+.sup {
+  //vertical-align: super;
+  position: relative;
+  bottom: 1ex;
+} // .sup
+
+// Special sections --------------------------------------------------
+.color-accent {
+  color: $color-accent;
+}
+
+.aside {
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1em;
+  clear: both;
+}
+
+.stroke-black {
+	//color: #FFFFFF;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+.inactive {
+  color: #BBBBBB !important;
+}
+
+.icon {
+  display: inline-flex;
+  align-self: center;
+
+  svg, img {
+    height: 1em;
+    width: 1em;
+    margin: 0 0.5em;
+
+    &.icon-print {
+      display: none;
+    } // &.icon-print
+
+    @media screen {
+      fill: $color-table-header;
+    } // @media screen
+
+    @media print {
+      &.icon-print {
+        display: inline-block;
+      } // &.icon-print
+      &.icon-screen {
+        display: none;
+      } // &.icon-screen
+    } // @media print
+
+  } // svg, img
+
+  &.baseline svg, img {
+    //top: 0.125em;
+    position: relative;
+  } // &.baseline svg, img
+
+} // .icon
+
+// Footer --------------------------------------------------
+footer {
+  margin-top: 1em;
+  @include span(12 of 12);
+
+  a {
+    color: lighten($color-text, 60%);
+    text-decoration: underline;
+
+    &:hover {
+        color: lighten($color-text, 15%);
+    } //:hover
+
+  } //a
+
+} //footer
