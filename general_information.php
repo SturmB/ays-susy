@@ -38,12 +38,11 @@
                 high-resolution digital art. Digital proofs are sent via email for all new orders and reorders.</p>
             <p>Call our customer service representatives if you have questions concerning art at 1-800-932-9933. We're
                 happy to help! You can also email us your artwork to the address below.</p>
-            <p>Art email: <a href="mailto:customerservice@americancabin.com">customerservice@americancabin.com</a></p>
+            <p>Art email: <a href="mailto:customerservice@americanyachtsupply.com">customerservice@americanyachtsupply.com</a></p>
 
             <h5>Acceptable Digital Art:</h5>
             <ol>
-                <li>We use digital vector (line art) files from these vector drawing programs: Corel Draw - (.cdr) files
-                    (versions 3 through 2017). Adobe Illustrator - (.ai) or (.eps) (versions 3 through CC 2018). *All
+                <li>We use digital vector (line art) files from these vector drawing programs: Adobe Illustrator - (.ai) or (.eps) (versions 3 through CC 2018). Corel Draw - (.cdr) files (versions 3 through 2017). *All
                     .eps
                     files need to be saved as "vector" or "editable" .eps formats from vector programs; not to be
                     confused with a raster .eps from Photoshop or paint programs.
@@ -53,7 +52,7 @@
                     high-resolution (600ppi or greater) and BLACK ONLY.
                 </li>
             </ol>
-            <p>*Emailed artwork can be sent to: <a href="mailto:customerservice@americancabin.com">customerservice@americancabin.com</a>.
+            <p>*Emailed artwork can be sent to: <a href="mailto:customerservice@americanyachtsupply.com">customerservice@americanyachtsupply.com</a>.
                 Please reference all pertinent information: company name, phone &amp; fax numbers, and PO#. Also please
                 name your artwork by PO# to help us match files.</p>
 
@@ -396,7 +395,7 @@
             <h4>Privacy Policy:</h4>
 
             <p>We know that your privacy on the Internet is very important to you. As a result, we have prepared this
-                Privacy Policy to let you know there is no information-collecting cookies on American Cabin Supply's web
+                Privacy Policy to let you know there is no information-collecting cookies on American Yacht Supply's web
                 site, reassuring you of your privacy while browsing our site. You have our word.</p>
 
 

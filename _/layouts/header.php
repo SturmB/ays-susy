@@ -2,12 +2,12 @@
 
 <header>
     <a href="index.php">
-        <img src="images/logo/acs-logo-2017-01.svg" alt="American Cabin Supply">
+        <img src="images/logo/logo-ays-horizontal.svg" alt="American Yacht Supply">
     </a>
 </header>
 
 <nav>
-    <div id="flexinav1" class="flexinav flexinav_red"> <!-- BEGIN FLEXINAV -->
+    <div id="flexinav1" class="flexinav flexinav_ocean"> <!-- BEGIN FLEXINAV -->
         <div class="flexinav_wrapper"> <!-- Begin FlexiNav Container -->
             <ul class="flexinav_menu">
 

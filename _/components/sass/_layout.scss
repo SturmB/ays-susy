@@ -35,8 +35,8 @@ $breakpoints: (
 // Header --------------------------------------------------
 header a {
   display: none;
-  margin: 1em auto 0;
-  max-width: 250px;
+  margin: 1.5em auto 0;
+  max-width: 400px;
 
   @include media(">phone") {
     display: block;
@@ -173,6 +173,7 @@ nav {
   overflow: hidden;
   line-height: 0;
   clear: both;
+  border: 1px solid $color-bg-main;
 
   img {
     max-width: 100%;
@@ -185,10 +186,10 @@ nav {
     font-size: 1.25em;
     line-height: 1em;
     text-indent: 1em;
-    @include text-shadow(rgba($color-bg-abs, 0.50) 2px 2px 14px);
+    @include text-shadow(rgba($color-black-abs, 0.50) 2px 2px 14px);
     position: absolute;
     left: 50%;
-    top: 10%;
+    top: 5%;
 
     @include media(">phone") {
       font-size: 2em;
@@ -211,19 +212,24 @@ nav {
   padding: 15px;
   @include clearfix;
   //display: none;
+  border: 1px solid $color-bg-main;
 
   @include media(">tablet") {
     @include span(8 of 12 nest);
     //display: inherit;
-  }
+  } // >tablet
+
+  h2, h4 {
+    @include type-weight(bold);
+  } // h2, h4
 
   h2 {
     @include text-shadow(lighten($color-text-shadow2, 40%) 0 -1px 0, lighten($color-text-shadow1, 40%) 0 1px 0);
     border-top: 5px solid $color-text;
     padding-top: 0.5em;
-  }
+  } // h2
 
-} //main-content
+} // #main-content
 
 
 // Welcome Aboard Special --------------------------------------------------
@@ -234,7 +240,7 @@ nav {
     width: 100%;
     height: auto;
     border: 1px solid $color-text;
-    @include box-shadow(rgba($color-bg-abs, 0.15) 0 5px 10px);
+    @include box-shadow(rgba($color-black-abs, 0.15) 0 5px 10px);
     @include border-radius(5px);
   } // .promo-photo
 
@@ -340,7 +346,7 @@ nav {
 // Sidebar --------------------------------------------------
 #sidebar {
   @include span(12 of 12);
-  @include background($grad-sidebar, lighten($color-bg-abs, 30%));
+  @include background($grad-sidebar, lighten($color-black-abs, 30%));
   margin-top: 15px;
   padding: 15px;
   @include clearfix;
@@ -409,7 +415,8 @@ nav {
 #product-content {
   @include span(12 of 12);
   @include clearfix;
-  @include background($color-bg-abs);
+  //@include background($color-black-abs);
+  @include background($grad-sidebar-rev, lighten($color-black-abs, 30%));
   color: $color-text-alt;
   border: 2px solid $color-bg-main;
 
@@ -602,7 +609,7 @@ nav {
 
   dt {
     float: left;
-    color: #C22426;
+    color: $color-accent;
     margin-right: 0.5em;
   } // dt
 
@@ -671,7 +678,7 @@ nav {
 
 .swatch-title {
   display: inline-block;
-  @include background($color-bg-abs-lighter);
+  @include background($color-black-abs-lighter);
   @include border-top-radius(0.25em);
   padding: 0 0.5em;
   font-weight: bold;
@@ -684,7 +691,7 @@ nav {
 } //swatch-title
 
 .swatches {
-  @include background($grad-swatch-bg, $color-bg-abs-lighter);
+  @include background($grad-swatch-bg, $color-black-abs-lighter);
   @include border-radius(0.25em);
   margin: 0 1em 1em 1em;
   padding: 1em;
@@ -838,7 +845,7 @@ nav {
         width: 200px;
         height: 200px;
         @include border-radius(0.5em);
-        border: $thumb-border-size solid $color-bg-abs;
+        border: $thumb-border-size solid $color-black-abs;
 
         .item-thumb-overlay {
           width: 200px;
@@ -859,7 +866,7 @@ nav {
           } // h4
 
           &:hover {
-            background: rgba($color-bg-abs, 0.35);
+            background: rgba($color-black-abs, 0.35);
 
             h4 {
               display: block;
@@ -930,7 +937,7 @@ nav {
       margin-bottom: 0.5em;
       width: 200px;
       height: 200px;
-      border: $thumb-border-size solid $color-bg-abs;
+      border: $thumb-border-size solid $color-black-abs;
 
       .item-thumb-overlay h4 {
         display: none;
@@ -955,7 +962,7 @@ nav {
         } // h4
 
         &:hover {
-          background: rgba($color-bg-abs, 0.35);
+          background: rgba($color-black-abs, 0.35);
 
           h4 {
             display: block;
@@ -1144,7 +1151,7 @@ nav {
   @include background($grad-menu, $color-bg-lighter);
   padding: 15px;
   @include clearfix;
-  color: $color-bg-abs;
+  color: $color-black-abs;
 
   ol {
     list-style-type: decimal;
@@ -1176,7 +1183,7 @@ nav {
   } // >phone
 
   h4, h5, .accent {
-    color: #9E0200;
+    color: darken($color-accent, 10%);
   	font-weight: bold;
   } //h4, h5, .accent
 

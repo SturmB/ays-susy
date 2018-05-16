@@ -126,11 +126,12 @@ footer {
   @include span(12 of 12);
 
   a {
-    color: lighten($color-text, 60%);
+    //color: lighten($color-text, 60%);
+    color: $color-accent;
     text-decoration: underline;
 
     &:hover {
-        color: lighten($color-text, 15%);
+        color: lighten($color-accent, 15%);
     } //:hover
 
   } //a

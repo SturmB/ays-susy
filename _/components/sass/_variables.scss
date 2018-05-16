@@ -1,6 +1,7 @@
 // Colors --------------------------------------------------
-$color-bg-abs               : #000000;
-$color-bg-abs-lighter       : lighten($color-bg-abs, 20%);
+$color-black-abs            : #000000;
+$color-black-abs-lighter    : lighten($color-black-abs, 20%);
+$color-bg-abs               : #ffffff;
 $color-bg-main              : #333333;
 $color-bg-lighter           : lighten($color-bg-main, 30%);
 $color-bg-lightest          : lighten($color-bg-main, 60%);
@@ -17,7 +18,7 @@ $color-link-active          : lighten($color-link, 40%);
 $color-linkalt              : #00ced1;
 $color-linkalt-hover        : lighten($color-linkalt, 10%);
 $color-linkalt-active       : lighten($color-linkalt, 20%);
-$color-accent               : #c61d23;
+$color-accent               : #1584c9;
 
 $color-table-row-odd        : lighten($color-text, 50%);
 $color-table-row-even       : lighten($color-text, 70%);
@@ -42,14 +43,15 @@ $color-digital              : #7e37d6;
 $color-tradition            : #fcaf17;
 $color-hispeed              : #74b44d;
 // Gradients --------------------------------------------------
-$grad-background1           : linear-gradient(to bottom, lighten($color-bg-abs, 20%), $color-bg-abs);
+$grad-background1           : linear-gradient(to bottom, lighten($color-black-abs, 20%), $color-black-abs);
 $grad-menu                  : linear-gradient($color-menu-stop1, $color-menu-stop2);
 $grad-menu-alt              : linear-gradient(darken($color-menu-stop1, 30%), darken($color-menu-stop2, 30%));
-$grad-sidebar               : linear-gradient(to bottom, lighten($color-bg-abs, 30%), lighten($color-bg-abs, 10%));
+$grad-sidebar               : linear-gradient(to bottom, lighten($color-black-abs, 30%), lighten($color-black-abs, 10%));
+$grad-sidebar-rev           : linear-gradient(to top, lighten($color-black-abs, 30%), lighten($color-black-abs, 10%));
 $grad-accent-selected       : linear-gradient(to bottom, darken($color-accent, 10%), darken($color-accent, 20%));
 $grad-accent                : linear-gradient(to bottom, darken($color-accent, 20%), darken($color-accent, 30%));
 $grad-accent-right          : linear-gradient(to right, darken($color-accent, 20%), darken($color-accent, 30%));
-$grad-swatch-bg             : linear-gradient(to bottom, lighten($color-bg-abs, 20%), lighten($color-bg-abs, 10%));
+$grad-swatch-bg             : linear-gradient(to bottom, lighten($color-black-abs, 20%), lighten($color-black-abs, 10%));
 
 $grad-napkin                : linear-gradient(to bottom, $color-napkin-stop1, $color-napkin-stop2);
 $grad-coaster               : linear-gradient($color-coaster-stop1, $color-coaster-stop2);
@@ -79,6 +81,6 @@ $spacing                    : 2em;
 // Sizing --------------------------------------------------
 
 // Images --------------------------------------------------
-$bg-main                    : image-url("background-planes-2800x1600.jpg");
+$bg-main                    : image-url("background-yachts-2800x1600.jpg");
 $bg-hero                    : image-url("hero-01.jpg");
 $logo-main                  : image-url("logo/acs-logo-2017-01.svg");

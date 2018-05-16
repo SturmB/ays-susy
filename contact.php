@@ -25,17 +25,21 @@
         </div>
 
         <div id="contact-info">
-            <h6>American Cabin Supply</h6>
-            <p>390 Enterprise Drive<br>
-                Nicholasville, KY 40356</p>
+            <h6>American Yacht Supply</h6>
+            <p>
+                390 Enterprise Drive<br>
+                Nicholasville, KY 40356
+            </p>
 
-            <p>Phone: (859) 887-1492<br>
-                Toll Free: (800) 932-9933<br>
-                24-Hour Fax Line: (859) 885-7891 </p>
+            <p>
+                Phone: (859) 887-3143<br>
+                Toll Free: (800) 538-3686<br>
+                24-Hour Fax Line: (859) 885-7891
+            </p>
 
             <p>Hours: 8:30am &ndash; 5:00pm EST Mon.&ndash;Fri.</p>
 
-            <p><a href="mailto:customerservice@americancabin.com">customerservice@americancabin.com</a></p>
+            <p><a href="mailto:customerservice@americanyachtsupply.com">customerservice@americanyachtsupply.com</a></p>
         </div>
 
     </section>

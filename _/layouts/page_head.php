@@ -16,7 +16,7 @@
 <!-- End Google Tag Manager -->
 
 <meta charset="UTF-8">
-<title>American Cabin Supply</title>
+<title>American Yacht Supply</title>
 <meta name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
@@ -59,8 +59,9 @@
 <!--    <link rel="stylesheet" href="_/vendor/flexinav/fonts/css/font-awesome.css">-->
 
 <!--Typekit-->
-<script src="https://use.typekit.net/iky4qsm.js"></script>
-<script>try {Typekit.load({ async: true });} catch (e) {}</script>
+<link rel="stylesheet" href="https://use.typekit.net/gaj2qyg.css">
+<!--<script src="https://use.typekit.net/iky4qsm.js"></script>-->
+<!--<script>try {Typekit.load({ async: true });} catch (e) {}</script>-->
 
 <!--imagesLoaded-->
 <!--<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>-->
