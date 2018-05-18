@@ -26,7 +26,7 @@
 <link rel="apple-touch-icon-precomposed" href="favicons/favicon-120.png">
 <link rel="apple-touch-icon-precomposed" href="favicons/favicon-76.png">
 <link rel="apple-touch-icon-precomposed" href="favicons/favicon-57.png">
-<link rel="mask-icon" href="favicons/icon.svg" color="#591315">
+<link rel="mask-icon" href="favicons/icon.svg" color="#0082cb">
 <link rel="shortcut icon" sizes="196x196" href="favicons/favicon-196.png">
 
 <link rel="icon" href="favicons/favicon-228.png" sizes="228x228">
@@ -36,10 +36,10 @@
 <link rel="icon" href="favicons/favicon-96.png" sizes="96x96">
 <link rel="icon" href="favicons/favicon-32.png" sizes="32x32">
 
-<meta name="msapplication-TileColor" content="#591315">
+<meta name="msapplication-TileColor" content="#0082cb">
 <meta name="msapplication-TileImage" content="favicons/favicon-144.png">
-<meta name="application-name" content="American Cabin Supply">
-<meta name="msapplication-tooltip" content="American Cabin Supply">
+<meta name="application-name" content="American Yacht Supply">
+<meta name="msapplication-tooltip" content="American Yacht Supply">
 <meta name="msapplication-config" content="favicons/ieconfig.xml">
 <!-- End Favicons -->
 
