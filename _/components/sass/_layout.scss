@@ -64,7 +64,7 @@ nav {
 
 } // .flexinav
 
-/* ACS Light Red */
+/* AYS Blue */
 .flexinav_acslightred,
 .flexinav_acslightred .flexinav_wrapper .flexinav_menu > li,
 .flexinav_acslightred .flexinav_wrapper .flexinav_menu > li.noactive,
@@ -415,8 +415,8 @@ nav {
 #product-content {
   @include span(12 of 12);
   @include clearfix;
-  //@include background($color-black-abs);
-  @include background($grad-sidebar-rev, lighten($color-black-abs, 30%));
+  @include background($color-black-abs);
+  //@include background($grad-sidebar-rev, lighten($color-black-abs, 30%));
   color: $color-text-alt;
   border: 2px solid $color-bg-main;
 
