@@ -544,7 +544,8 @@ function getPricing($db, $subcatmethod_id, $product_id, $showInactive)
 
 function getImages($category, $subcategory, $item_num)
 {
-    $result = "<h4 class='stroke-black text-rollover'>Sample</h4>" . PHP_EOL;
+//    $result = "<h4 class='stroke-black text-rollover'>Sample</h4>" . PHP_EOL;
+    $result = "<div class='ribbon-wrapper'><div class='ribbon'>Sample</div></div>" . PHP_EOL;
 
     $folder  = "../images/products/products-assets/";
     $folder .= $category;

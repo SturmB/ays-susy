@@ -939,9 +939,10 @@ nav {
       height: 200px;
       border: $thumb-border-size solid $color-black-abs;
 
-      .item-thumb-overlay h4 {
+      .item-thumb-overlay h4,
+      .item-thumb-overlay .ribbon-wrapper {
         display: none;
-      }
+      } // .item-thumb-overlay h4, .item-thumb-overlay .ribbon-wrapper
 
       .overlay-rollover {
         width: 200px;
@@ -961,10 +962,66 @@ nav {
           display: none;
         } // h4
 
+        // Corner Ribbon
+        .ribbon-wrapper {
+          width: 85px;
+          height: 88px;
+          overflow: hidden;
+          position: absolute;
+          top: -5px;
+          left: -5px;
+
+          display: none;
+          z-index: 10;
+        } // .ribbon-wrapper
+
+        .ribbon {
+          font: bold 15px Sans-Serif;
+          color: darken($color-accent, 40%);
+          text-align: center;
+          text-shadow: rgba(255,255,255,0.2) 0px 1px 0px;
+          text-transform: uppercase;
+          -webkit-transform: rotate(-45deg);
+          -moz-transform:    rotate(-45deg);
+          -ms-transform:     rotate(-45deg);
+          -o-transform:      rotate(-45deg);
+          position: relative;
+          padding: 5px 0;
+          right: -8px;
+          top: 20px;
+          width: 120px;
+          background-color: $color-accent;
+          background-image: $grad-accent-selected;
+          -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.3);
+          -moz-box-shadow:    0 0 3px rgba(0,0,0,0.3);
+          box-shadow:         0 0 3px rgba(0,0,0,0.3);
+          float: right;
+
+          &:before, &:after {
+            content: "";
+            border-top:   2px solid darken($color-accent, 30%);
+            border-left:  2px solid transparent;
+            border-right: 2px solid transparent;
+            position:absolute;
+            bottom: -2px;
+          } // &:before, &:after
+
+          &:before {
+            left: 0;
+          } // &:before
+
+          &:after {
+            right: 0;
+          } // &:after
+
+        } // .ribbon
+
+
         &:hover {
           background: rgba($color-black-abs, 0.35);
 
-          h4 {
+          h4,
+          .ribbon-wrapper {
             display: block;
           } // h4
 
