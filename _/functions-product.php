@@ -25,8 +25,8 @@ function displayTitle($db, $category, $subcategory, $method, $showInactive)
     $result = mysqli_fetch_assoc($title_result) or die(mysqli_error($db));
 
     $product_name = htmlentities($result['product_name']);
-    $method_name = htmlentities($result['method_name']);
-    $method_desc = htmlentities($result['method_desc']);
+//    $method_name = htmlentities($result['method_name']);
+//    $method_desc = htmlentities($result['method_desc']);
 
     $html  = "<h1 class='product-name selected'>{$product_name}</h1>" . PHP_EOL;
 //    $html .= "<div class='method-info'>" . PHP_EOL;
@@ -79,10 +79,10 @@ function methodButton($method_short_name, $method_long_name, $selected)
     echo "<h2>";
     echo htmlentities($method_long_name);
     echo "</h2>" . PHP_EOL;
-    //    echo "<h5>";
-    //    echo htmlentities($method_short_desc);
-    //    echo "</h5>" . PHP_EOL;
-    //    echo $parenthetical;
+//    echo "<h5>";
+//    echo htmlentities($method_short_desc);
+//    echo "</h5>" . PHP_EOL;
+//    echo $parenthetical;
     echo "</a>" . PHP_EOL;
 }
 
@@ -114,7 +114,7 @@ function displayMethodButtons(
                 $method['short_name'] === $printMethod
             );
         }
-        //        echo "<a href='#' id='printMethodDifference'>What's the difference? &mdash; Learn more <i class='fa fa-external-link'></i></a>";
+//        echo "<a href='#' id='printMethodDifference'>What's the difference? &mdash; Learn more <i class='fa fa-external-link'></i></a>";
         echo "<a href='#' id='printMethodDifference'>What's the difference? <i class='fas fa-info-circle'></i> Learn more</a>";
     }
 
@@ -692,7 +692,7 @@ function displayProductInfo(
         foreach ($columns as $colName) {
             $headerClass = 'main-column';
             $forDisplay = Charges::prettyNameOf($colName);
-            $symbol = Charges::symbolOf($colName);
+//            $symbol = Charges::symbolOf($colName);
             $icon = Charges::iconNameOf($colName);
 
 
@@ -711,10 +711,10 @@ function displayProductInfo(
                 $symbolLegend .= "  </div>" . PHP_EOL;
                 $symbolLegend .= "</li>" . PHP_EOL;
 
-                $forDisplay  = "<span class='fa-layers fa-fw'>";
-                $forDisplay .= "    <i class='fas fa-circle'></i>";
-                $forDisplay .= "    <span class='fa-layers-text fa-inverse' data-fa-transform='shrink-4 down-1'>{$symbol}</span>";
-                $forDisplay .= "</span>";
+//                $forDisplay  = "<span class='fa-layers fa-fw'>";
+//                $forDisplay .= "    <i class='fas fa-circle'></i>";
+//                $forDisplay .= "    <span class='fa-layers-text fa-inverse' data-fa-transform='shrink-4 down-1'>{$symbol}</span>";
+//                $forDisplay .= "</span>";
 
                 $forDisplay  = "<div class='icon baseline'>" . PHP_EOL;
                 $forDisplay .= "    <img src='images/charges-icons/{$icon}-th.svg' class='svg icon-screen'>" . PHP_EOL;
@@ -741,8 +741,8 @@ function displayProductInfo(
             //            $decimals = 3; // Commented-out because Cabin orders do not use decimal numbers for prices nor other charges.
             $decimals = 0;
             $perThousand = "";
-            $specialPrice = false;
-            $asterisk = "";
+//            $specialPrice = false;
+//            $asterisk = "";
             if ($category == "napkin" && $method == "hispeed") {
                 $decimals = 2;
                 $perThousand = "M";
@@ -763,7 +763,7 @@ function displayProductInfo(
 //                    $asterisk = "";
                     if ($number >= 1000) {
                         $everyThousand = true;
-                        $specialPrice = true;
+//                        $specialPrice = true;
                     }
                 } else {
                     // For any column _other than_ the "Quantity" column. (Only monetary units?)
@@ -782,11 +782,11 @@ function displayProductInfo(
                     "            <td class='numeric {$classes}'>{$formatted}</td>" .
                     PHP_EOL;
             }
-            //            $output .= $formatted_quantity;
-            //            $output .= "</td>" . PHP_EOL;
-            //            $output .= "      <td class=\"numeric\">";
-            //            $output .= $formatted_price;
-            //            $output .= "</td>" . PHP_EOL;
+//            $output .= $formatted_quantity;
+//            $output .= "</td>" . PHP_EOL;
+//            $output .= "      <td class=\"numeric\">";
+//            $output .= $formatted_price;
+//            $output .= "</td>" . PHP_EOL;
             $output .= "        </tr>" . PHP_EOL;
         }
 

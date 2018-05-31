@@ -706,7 +706,7 @@ nav {
   text-align: center;
 } // #product-colors, #ink-colors, #other-notes
 
-#ink-colors {
+#ink-colors.share-width {
   @include media('>phone') {
     @include span(8);
   } // >phone

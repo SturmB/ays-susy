@@ -1201,7 +1201,7 @@ header a {
 
 @media (min-width: 30.01em) {
   /* line 709, ../components/sass/_layout.scss */
-  #ink-colors {
+  #ink-colors.share-width {
     width: 66.10169%;
     float: left;
     margin-right: 1.69492%;
